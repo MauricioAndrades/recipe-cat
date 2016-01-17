@@ -5,3 +5,4 @@ private
 .env
 
 devBin
+.jshintrc
