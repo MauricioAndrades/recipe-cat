@@ -3,26 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/searchform.css">
-  <link rel="stylesheet" href="css/style.css">
   <title>Responsive List</title>
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Minified, production version -->
+  <script src="https://npmcdn.com/little-loader@VERSION/dist/little-loader.min.js"></script>
+  <!-- Development version -->
+  <!-- <script src="https://npmcdn.com/little-loader@VERSION/lib/little-loader.js"></script> -->
 </head>
 
 <body class="preload">
-
-    <div id="wrap">
-      <form action="" autocomplete="on">
-      <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
-      </form>
-    </div>
-    <div class="responsive">
-      <ul class="content">
+<!-- searchbar -->
+<div id="wrap">
+  <form action="" autocomplete="on">
+  <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+  </form>
+</div>
+<!-- end -->
+  <div class="responsive">
+    <ul class="content">
 
       <!-- 1 -->
       <li>
         <div class="card-front">
-          <h2><b>{{Title}}</b></h2>
+          <h2><b>What is Lorem ipsum?</b></h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum.</p>
         </div>
         <div class="card-back">
@@ -167,4 +171,4 @@
 <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
 <script src="js/index.js"></script>
 
-</html
+</html>
