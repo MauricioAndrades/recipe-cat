@@ -3,11 +3,12 @@ var express = require('express');
 var qs = require('qs');
 // var util = require('util');
 // var fs = require('fs');
+var axios = require('axios');
 require('dotenv').load();
 var router = express.Router();
 
 
-
+debugger;
 router.get('/', function(req, res) {
     var qString = qs.stringify(req.query);
     var ApiEndpoint = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?";
@@ -47,7 +48,7 @@ router.get('/', function(req, res) {
     })*/
     .then(function(data) {
         // console.log(data.data);
-        // console.log(data.data);
+        console.log(data.data[0].id);
         // console.log(data.status);
         // console.log(data.statusText);
         // console.log(data.headers);
