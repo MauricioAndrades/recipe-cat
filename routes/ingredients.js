@@ -7,7 +7,7 @@ var axios = require('axios');
 require('dotenv').load();
 var router = express.Router();
 
-router.get('/', function(req, res) {
+router.get('', function(req, res) {
     var qString = qs.stringify(req.query);
     var ApiEndpoint = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?";
     var ApiIdEndPoint = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/";

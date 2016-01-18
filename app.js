@@ -1,4 +1,5 @@
 var express = require('express');
+var exphbs  = require('express-handlebars');
 var path = require('path');
 // var favicon = require('serve-favicon');
 require('dotenv').load();
@@ -10,18 +11,30 @@ var routes = require('./routes/index');
 // var users = require('./routes/users');
 var ingredients = require('./routes/ingredients');
 var app = express();
-debugger;
+
+var hbs = exphbs.create({
+    // Specify helpers which are only registered on this instance.
+    helpers: {
+        foo: function () { return 'FOO!'; },
+        bar: function () { return 'BAR!'; }
+    }
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
-
+app.engine('handlebars', exphbs({defaultLayout: 'handlebars'}));
+app.set('view engine', 'handlebars');
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', function (req, res) {
+    res.render('index');
+});
 
 // app.use('/', routes);
 // app.use('/users', users);
