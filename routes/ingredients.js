@@ -37,7 +37,7 @@ router.get('/', function(req, res) {
                 res.id = arr[i].id,
                 res.image = arr[i].image
             };
-        res.send(data.data);
+        res.render(data.data);
         })
         .catch(function(response) {
             if (response instanceof Error) {
