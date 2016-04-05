@@ -30,14 +30,14 @@ router.get('', function(req, res) {
             xsrfHeaderName: 'X-XSRF-TOKEN',
         })
         .then(function(data) {
-            var arr = data.data;
-            for (var i = 0; i < arr.length; i++) {1
-
-                res.title = arr[i].title,
-                res.id = arr[i].id,
-                res.image = arr[i].image
-            };
-        res.render(data.data);
+            var arr = [];
+            arr = data.data;
+            // for (var i = 0; i < arr.length; i++) {
+            //     res.title = arr[i].title,
+            //     res.id = arr[i].id,
+            //     res.image = arr[i].image
+            // };
+        res.send(data.data);
         })
         .catch(function(res) {
             if (res instanceof Error) {
