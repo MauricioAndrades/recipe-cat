@@ -1,8 +1,8 @@
 var NodeUglifier = require("node-uglifier");
-var nodeUglifier = new NodeUglifier("./app.js");
+var nodeUglifier = new NodeUglifier("./www");
 nodeUglifier.merge().uglify();
 
-nodeUglifier.exportToFile("./node-ug/simpleMergeAndUglify.js");
-nodeUglifier.exportSourceMaps("./node-ug/simpleMergeAndUglify.js");
+nodeUglifier.exportToFile("./www.js");
+nodeUglifier.exportSourceMaps("./app-sourceMap.js");
 
 var uglifiedString=nodeUglifier.toString();

@@ -86,21 +86,17 @@ video {
   font: inherit;
   font-size: 100%;
 }
-
 html {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 caption,
 td,
 th {
@@ -108,12 +104,10 @@ th {
   vertical-align: middle;
   font-weight: normal;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:after,
 blockquote:before,
 q:after,
@@ -121,11 +115,9 @@ q:before {
   content: "";
   content: none;
 }
-
 a img {
   border: none;
 }
-
 article,
 aside,
 details,
@@ -141,41 +133,33 @@ section,
 summary {
   display: block;
 }
-
 body,
 html {
   height: 100%;
 }
-
 body {
   color: #fff;
   font-family: 'Oswald', sans-serif;
   background: #212121;
 }
-
-
 /**
 *
 * Responsive list
 *
 **/
-
 .responsive {
   width: 100%;
   height: 100%;
 }
-
 .content {
   width: 100%;
   height: 100%;
   float: left;
 }
-
 .content img {
   width: 100%;
   height: 101%;
 }
-
 .content li {
   position: relative;
   width: 33.2%;
@@ -184,11 +168,9 @@ body {
   border-bottom: 1px solid #2c2c2c;
   border-left: 1px solid #2c2c2c;
 }
-
 .content li:hover {
   cursor: pointer;
 }
-
 .content li:hover .card-front {
   transform: rotateX(50deg);
   transform: perspective(1000) rotateX(50deg);
@@ -198,7 +180,6 @@ body {
   -webkit-transform: rotateX(50deg);
   -webkit-transform: perspective(1000) rotateX(50deg);
 }
-
 .content li:hover .card-back {
   z-index: 950;
   transform: rotateX(0deg);
@@ -209,45 +190,35 @@ body {
   -webkit-transform: rotateX(0deg);
   -webkit-transform: perspective(1000) rotateX(0deg);
 }
-
 .content li:nth-child(1) .card-back,
 .content li:nth-child(9) .card-back {
   background: #6b6b6b;
 }
-
 .content li:nth-child(2) .card-back {
   background: #22cfda;
 }
-
 .content li:nth-child(3) .card-back {
   background: #162b53;
 }
-
 .content li:nth-child(4) .card-back {
   background: #ee2ca3;
 }
-
 .content li:nth-child(5) .card-back {
   background: #d0ce06;
 }
-
 .content li:nth-child(6) .card-back {
   background: #7381a8;
 }
-
 .content li:nth-child(7) .card-back {
   background: #da222b;
 }
-
 .content li:nth-child(8) .card-back {
   background: #f07938;
 }
-
 .content li:first-child,
 .content li:last-child {
   background-color: #151515;
 }
-
 .content .card-back,
 .content .card-front {
   display: block;
@@ -263,21 +234,18 @@ body {
   -moz-backface-visibility: hidden;
   -o-transition: -o-transform 400ms;
 }
-
 .content .card-front {
   z-index: 900;
   transform: perspective(1000) rotateX(0);
   -moz-transform: perspective(1000) rotateX(0);
   -webkit-transform: perspective(1000) rotateX(0);
 }
-
 .content .card-back {
   z-index: 800;
   transform: rotateX(-180deg);
   -moz-transform: rotateX(-180deg);
   -webkit-transform: rotateX(-180deg);
 }
-
 .content h2 {
   width: 100%;
   float: right;
@@ -287,12 +255,10 @@ body {
   text-transform: uppercase;
   font-size: 28px;
 }
-
 .content h2 b {
   width: 55%;
   float: right;
 }
-
 .content p {
   width: 90%;
   float: right;
@@ -300,7 +266,6 @@ body {
   color: #3d3d3d;
   line-height: 1.3em;
 }
-
 .close {
   position: absolute;
   top: 0;
@@ -312,23 +277,19 @@ body {
   background: #fff;
   cursor: pointer;
 }
-
 .active {
   width: 100% !important;
   height: 100% !important;
 }
-
 .active .all-content {
   position: absolute;
   top: 20px;
   left: 10px;
 }
-
 .active .all-content h1 {
   width: 50%;
   font-size: 80px;
 }
-
 @media (min-width: 440px) and (max-width: 750px) {
   .content h2 {
     font-size: 22px;
@@ -340,7 +301,6 @@ body {
     width: 33.1%;
   }
 }
-
 @media (max-width: 439px) {
   .content h2 {
     font-size: 15px;
@@ -352,7 +312,6 @@ body {
     width: 33%;
   }
 }
-
 @media (max-height: 450px) {
   .content h2 {
     font-size: 22px;
@@ -364,15 +323,12 @@ body {
     width: 33%;
   }
 }
-
-
 /**
 *
 * Animate.css
 * From : http://daneden.me/animate/
 *
 **/
-
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -385,7 +341,6 @@ body {
   -moz-animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
 }
-
 .animated.hinge {
   animation-duration: 2s;
   -o-animation-duration: 2s;
@@ -393,7 +348,6 @@ body {
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s;
 }
-
 @-webkit-keyframes bounceIn {
   0% {
     opacity: 0;
@@ -410,7 +364,6 @@ body {
     -webkit-transform: scale(1);
   }
 }
-
 @-moz-keyframes bounceIn {
   0% {
     opacity: 0;
@@ -427,7 +380,6 @@ body {
     -moz-transform: scale(1);
   }
 }
-
 @-o-keyframes bounceIn {
   0% {
     opacity: 0;
@@ -444,7 +396,6 @@ body {
     -o-transform: scale(1);
   }
 }
-
 @keyframes bounceIn {
   0% {
     opacity: 0;
@@ -461,14 +412,12 @@ body {
     transform: scale(1);
   }
 }
-
 .bounceIn {
   animation-name: bounceIn;
   -o-animation-name: bounceIn;
   -moz-animation-name: bounceIn;
   -webkit-animation-name: bounceIn;
 }
-
 @-webkit-keyframes bounceInUp {
   0% {
     opacity: 0;
@@ -485,7 +434,6 @@ body {
     -webkit-transform: translateY(0);
   }
 }
-
 @-moz-keyframes bounceInUp {
   0% {
     opacity: 0;
@@ -502,7 +450,6 @@ body {
     -moz-transform: translateY(0);
   }
 }
-
 @-o-keyframes bounceInUp {
   0% {
     opacity: 0;
@@ -519,7 +466,6 @@ body {
     -o-transform: translateY(0);
   }
 }
-
 @keyframes bounceInUp {
   0% {
     opacity: 0;
@@ -536,14 +482,12 @@ body {
     transform: translateY(0);
   }
 }
-
 .bounceInUp {
   animation-name: bounceInUp;
   -o-animation-name: bounceInUp;
   -moz-animation-name: bounceInUp;
   -webkit-animation-name: bounceInUp;
 }
-
 @-webkit-keyframes bounceInDown {
   0% {
     opacity: 0;
@@ -560,7 +504,6 @@ body {
     -webkit-transform: translateY(0);
   }
 }
-
 @-moz-keyframes bounceInDown {
   0% {
     opacity: 0;
@@ -577,7 +520,6 @@ body {
     -moz-transform: translateY(0);
   }
 }
-
 @-o-keyframes bounceInDown {
   0% {
     opacity: 0;
@@ -594,7 +536,6 @@ body {
     -o-transform: translateY(0);
   }
 }
-
 @keyframes bounceInDown {
   0% {
     opacity: 0;
@@ -611,14 +552,12 @@ body {
     transform: translateY(0);
   }
 }
-
 .bounceInDown {
   animation-name: bounceInDown;
   -o-animation-name: bounceInDown;
   -moz-animation-name: bounceInDown;
   -webkit-animation-name: bounceInDown;
 }
-
 @-webkit-keyframes bounceInLeft {
   0% {
     opacity: 0;
@@ -635,7 +574,6 @@ body {
     -webkit-transform: translateX(0);
   }
 }
-
 @-moz-keyframes bounceInLeft {
   0% {
     opacity: 0;
@@ -652,7 +590,6 @@ body {
     -moz-transform: translateX(0);
   }
 }
-
 @-o-keyframes bounceInLeft {
   0% {
     opacity: 0;
@@ -669,7 +606,6 @@ body {
     -o-transform: translateX(0);
   }
 }
-
 @keyframes bounceInLeft {
   0% {
     opacity: 0;
@@ -686,14 +622,12 @@ body {
     transform: translateX(0);
   }
 }
-
 .bounceInLeft {
   animation-name: bounceInLeft;
   -o-animation-name: bounceInLeft;
   -moz-animation-name: bounceInLeft;
   -webkit-animation-name: bounceInLeft;
 }
-
 @-webkit-keyframes bounceInRight {
   0% {
     opacity: 0;
@@ -710,7 +644,6 @@ body {
     -webkit-transform: translateX(0);
   }
 }
-
 @-moz-keyframes bounceInRight {
   0% {
     opacity: 0;
@@ -727,7 +660,6 @@ body {
     -moz-transform: translateX(0);
   }
 }
-
 @-o-keyframes bounceInRight {
   0% {
     opacity: 0;
@@ -744,7 +676,6 @@ body {
     -o-transform: translateX(0);
   }
 }
-
 @keyframes bounceInRight {
   0% {
     opacity: 0;
@@ -761,14 +692,12 @@ body {
     transform: translateX(0);
   }
 }
-
 .bounceInRight {
   animation-name: bounceInRight;
   -o-animation-name: bounceInRight;
   -moz-animation-name: bounceInRight;
   -webkit-animation-name: bounceInRight;
 }
-
 @-webkit-keyframes rotateIn {
   0% {
     opacity: 0;
@@ -781,7 +710,6 @@ body {
     -webkit-transform-origin: center center;
   }
 }
-
 @-moz-keyframes rotateIn {
   0% {
     opacity: 0;
@@ -794,7 +722,6 @@ body {
     -moz-transform-origin: center center;
   }
 }
-
 @-o-keyframes rotateIn {
   0% {
     opacity: 0;
@@ -807,7 +734,6 @@ body {
     -o-transform-origin: center center;
   }
 }
-
 @keyframes rotateIn {
   0% {
     opacity: 0;
@@ -820,14 +746,12 @@ body {
     transform-origin: center center;
   }
 }
-
 .rotateIn {
   animation-name: rotateIn;
   -o-animation-name: rotateIn;
   -moz-animation-name: rotateIn;
   -webkit-animation-name: rotateIn;
 }
-
 @-webkit-keyframes rotateInUpLeft {
   0% {
     opacity: 0;
@@ -840,7 +764,6 @@ body {
     -webkit-transform-origin: left bottom;
   }
 }
-
 @-moz-keyframes rotateInUpLeft {
   0% {
     opacity: 0;
@@ -853,7 +776,6 @@ body {
     -moz-transform-origin: left bottom;
   }
 }
-
 @-o-keyframes rotateInUpLeft {
   0% {
     opacity: 0;
@@ -866,7 +788,6 @@ body {
     -o-transform-origin: left bottom;
   }
 }
-
 @keyframes rotateInUpLeft {
   0% {
     opacity: 0;
@@ -879,14 +800,12 @@ body {
     transform-origin: left bottom;
   }
 }
-
 .rotateInUpLeft {
   animation-name: rotateInUpLeft;
   -o-animation-name: rotateInUpLeft;
   -moz-animation-name: rotateInUpLeft;
   -webkit-animation-name: rotateInUpLeft;
 }
-
 @-webkit-keyframes rotateInDownLeft {
   0% {
     opacity: 0;
@@ -899,7 +818,6 @@ body {
     -webkit-transform-origin: left bottom;
   }
 }
-
 @-moz-keyframes rotateInDownLeft {
   0% {
     opacity: 0;
@@ -912,7 +830,6 @@ body {
     -moz-transform-origin: left bottom;
   }
 }
-
 @-o-keyframes rotateInDownLeft {
   0% {
     opacity: 0;
@@ -925,7 +842,6 @@ body {
     -o-transform-origin: left bottom;
   }
 }
-
 @keyframes rotateInDownLeft {
   0% {
     opacity: 0;
@@ -938,14 +854,12 @@ body {
     transform-origin: left bottom;
   }
 }
-
 .rotateInDownLeft {
   animation-name: rotateInDownLeft;
   -o-animation-name: rotateInDownLeft;
   -moz-animation-name: rotateInDownLeft;
   -webkit-animation-name: rotateInDownLeft;
 }
-
 @-webkit-keyframes rotateInUpRight {
   0% {
     opacity: 0;
@@ -958,7 +872,6 @@ body {
     -webkit-transform-origin: right bottom;
   }
 }
-
 @-moz-keyframes rotateInUpRight {
   0% {
     opacity: 0;
@@ -971,7 +884,6 @@ body {
     -moz-transform-origin: right bottom;
   }
 }
-
 @-o-keyframes rotateInUpRight {
   0% {
     opacity: 0;
@@ -984,7 +896,6 @@ body {
     -o-transform-origin: right bottom;
   }
 }
-
 @keyframes rotateInUpRight {
   0% {
     opacity: 0;
@@ -997,14 +908,12 @@ body {
     transform-origin: right bottom;
   }
 }
-
 .rotateInUpRight {
   animation-name: rotateInUpRight;
   -o-animation-name: rotateInUpRight;
   -moz-animation-name: rotateInUpRight;
   -webkit-animation-name: rotateInUpRight;
 }
-
 @-webkit-keyframes rotateInDownRight {
   0% {
     opacity: 0;
@@ -1017,7 +926,6 @@ body {
     -webkit-transform-origin: right bottom;
   }
 }
-
 @-moz-keyframes rotateInDownRight {
   0% {
     opacity: 0;
@@ -1030,7 +938,6 @@ body {
     -moz-transform-origin: right bottom;
   }
 }
-
 @-o-keyframes rotateInDownRight {
   0% {
     opacity: 0;
@@ -1043,7 +950,6 @@ body {
     -o-transform-origin: right bottom;
   }
 }
-
 @keyframes rotateInDownRight {
   0% {
     opacity: 0;
@@ -1056,28 +962,19 @@ body {
     transform-origin: right bottom;
   }
 }
-
 .rotateInDownRight {
   animation-name: rotateInDownRight;
   -o-animation-name: rotateInDownRight;
   -moz-animation-name: rotateInDownRight;
   -webkit-animation-name: rotateInDownRight;
 }
-
-
 /* End animate.css*/
-
 .preload * {
 -webkit-transition: none !important;
 -moz-transition: none !important;
 -ms-transition: none !important;
 -o-transition: none !important;
 }
-
-
-
-
-
 #wrap {
   margin: 50px 100px;
   display: inline-block;
@@ -1087,7 +984,6 @@ body {
   padding: 0;
   position: relative;
 }
-
 input[type="text"] {
   background: none;
   border: none;
@@ -1108,11 +1004,9 @@ input[type="text"] {
   width: 0px;
   z-index: 3;
 }
-
 input[type="text"]:focus:hover {
   border-bottom: 1px solid #BBB;
 }
-
 input[type="text"]:focus {
   width: 700px;
   z-index: 1;
@@ -1137,7 +1031,6 @@ input[type="submit"] {
   cursor: pointer;
   transition: opacity .4s ease;
 }
-
 input[type="submit"]:hover {
   opacity: 0.8;
 }
