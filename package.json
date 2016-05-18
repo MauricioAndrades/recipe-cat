@@ -9,8 +9,12 @@
     "express-handlebars": "*",
     "hbs": "*",
     "jquery": "*",
+    "list-selectors": "^2.0.0",
     "morgan": "*",
     "node-uglifier": "^0.4.5",
+    "postcss-discard-duplicates": "^2.0.1",
+    "postcss-unique-selectors": "^2.0.2",
+    "prismjs": "^1.5.0",
     "q": "*",
     "serve-favicon": "*",
     "unirest": "*"
